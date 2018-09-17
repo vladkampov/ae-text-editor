@@ -10,5 +10,3 @@ Run `npm start` for a dev server.
 ## Notes
 + Text sample is given in `text.service.js`
 + Given files structure is not obligatory and could be changed
-
-

@@ -3,10 +3,16 @@
     height: 25px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-top: 5px;
+    justify-content: space-between;
+    padding: 10px 3rem;
+    width: 600px;
+    margin: auto;
 }
+
 #format-actions {
     width: 200px;
-    margin-right: 400px;
+}
+
+#format-actions button {
+    margin-right: 5px;
 }

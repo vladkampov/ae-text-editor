@@ -1,0 +1,23 @@
+#synonym-bar {
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#synonym-bar span {
+  margin: 0 5px;
+  cursor: pointer;
+  background: rgba(255, 165, 0, 0.3);
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+
+#synonym-scroll {
+  max-width: 400px;
+  height: 25px;
+  overflow-y: scroll;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}

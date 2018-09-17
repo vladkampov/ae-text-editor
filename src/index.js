@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'mobx-react';
+import UiStore from './store/uiStore';
+import SynonymStore from './store/synonymStore';
 import App from './App';
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = { uiStore: new UiStore(), synonymStore: new SynonymStore() };
+
+ReactDOM.render(
+  <Provider {...store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
 registerServiceWorker();
